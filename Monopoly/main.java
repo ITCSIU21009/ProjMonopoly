@@ -10,11 +10,14 @@ import java.awt.event.ActionListener;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
 
 public class main {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Monopoly");
         JPanel StartButton = new JPanel();
+        ImageIcon icon = new ImageIcon("StartButton.png");
+
         StartButton.setLayout(new BoxLayout(StartButton, BoxLayout.Y_AXIS));
 
         JButton button = new JButton("Start Game");
@@ -27,6 +30,7 @@ public class main {
                 JButton easyButton = new JButton("Easy");
                 JButton mediumButton = new JButton("Medium");
                 JButton hardButton = new JButton("Hard");
+
                 difficultyPanel.add(easyButton);
                 difficultyPanel.add(mediumButton);
                 difficultyPanel.add(hardButton);
@@ -45,5 +49,7 @@ public class main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
         frame.setVisible(true);
+        
+        
     }
 }
