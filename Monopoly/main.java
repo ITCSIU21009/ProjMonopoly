@@ -17,7 +17,7 @@ public class main {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Monopoly");
         JButton StartButton = new JButton();
-        ImageIcon icon = new ImageIcon("D:/Bin/Code/ProjMonopoly/Monopoly/res/StartButton.png");
+        ImageIcon icon = new ImageIcon("StartButton.png");
 
         StartButton.setLayout(new BoxLayout(StartButton, BoxLayout.Y_AXIS));
 
